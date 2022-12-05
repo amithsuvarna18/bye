@@ -1,0 +1,5 @@
+create table applicant1(Apno int primary key,Name varchar(20) not null,Gender char(1) check(Gender in('F','M')),DOB date, Address varchar(20),Qualification varchar(15), Email_id varchar(25));
+
+create table organization1 (Id int primary key,Cname varchar(25) not null,Address varchar(20),Phone bigint,Email_id varchar(25) Appno int,foreign key(Appno)references Applicant1(Apno));
+
+create table recruit1(Appno int primary key,Id int,Post varchar,Doj date,Salary int,foreign key(Id)references organization(Id),foreign key(Appno)references Applicant1(Apno));

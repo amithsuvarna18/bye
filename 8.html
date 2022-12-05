@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+function add()
+{
+var a=parseInt(document.fi.n.value);
+var b=parseInt(document.fi.m.value);
+document.fi.o.value=a+b;
+}
+function sub()
+{
+var a=parseInt(document.fi.n.value);
+var b=parseInt(document.fi.m.value);
+document.fi.o.value=a-b;
+}
+function mul()
+{
+var a=parseInt(document.fi.n.value);
+var b=parseInt(document.fi.m.value);
+document.fi.o.value=a*b;
+}
+function div()
+{
+var a=parseInt(document.fi.n.value);
+var b=parseInt(document.fi.m.value);
+document.fi.o.value=a/b;
+}
+</script></head>
+
+<body>
+<form name="fi">
+Enter num1:<input type ="text" name="n">
+Enter num2:<input type ="text" name="m">
+<input type="button" value="sum" onclick="add()"><br>
+<input type="button" value="subtraction" onclick="sub()"><br>
+<input type="button" value="multiplication" onclick="mul()"><br>
+<input type="button" value="division" onclick="div()"><br>
+sum is:<input type="text"  name="o">
+</form>
+</body>
+</html>
